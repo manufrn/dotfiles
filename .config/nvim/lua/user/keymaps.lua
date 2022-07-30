@@ -26,6 +26,7 @@ keymap("n", "<leader>wk", "<C-w>k", opts)
 keymap("n", "<leader>wl", "<C-w>l", opts)
 
 keymap("n", "<leader>ww", "<C-w>w", opts)
+keymap("n", "<leader>wv", ":vsplit<CR>", opts)
 
 
 -- Resize with arrows
@@ -69,5 +70,9 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- NVIM-TREE --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- TELESCOPE --
+keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>fp", ":Telescope find_files theme=dropdown cwd=~/.config/nvim previewer=false<CR>", opts)
 -- CODE-RUNNER --
-keymap("n", "<A-i>", ":RunCode<CR>", opts)
+keymap("n", "<A-i>", ":RunFile<CR>", opts)

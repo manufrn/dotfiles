@@ -8,5 +8,9 @@ require "user.lualine"
 require "user.nvim-treesitter"
 require "user.code_runner"
 require "user.toggleterm"
-
+require "user.comment"
+require "user.telescope"
+require "user.bufferline"
+require "user.autopairs"
+require "user.alpha"
 -- Fundamental stuff

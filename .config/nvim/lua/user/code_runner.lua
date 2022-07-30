@@ -7,4 +7,10 @@ code_runner.setup({
   filetype = {
     python = "python3 -u",
   },
+  -- choose default mode (valid term, tab, float, toggle)
+  mode = 'toggleterm',
+  -- Focus on runner window(only works on toggle, term and tab mode)
+  focus = false,
+  -- startinsert (see ':h inserting-ex')
+  startinsert = true,
 })
