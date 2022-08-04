@@ -33,7 +33,7 @@ vim.opt.sidescrolloff = 8
 vim.opt.guifont = "RobotoMono Nerd Font:h11"               -- the font used in graphical neovim applications
 
 
-
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]                    -- words separated by - are treated as one word
 vim.cmd[[hi bold ctermfg=NONE ctermbg=NONE cterm=NONE gui=NONE]]
+

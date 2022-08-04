@@ -56,6 +56,10 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim"
   use "akinsho/bufferline.nvim"
 
+  -- LSP
+  use "neovim/nvim-lspconfig"
+  use "williamboman/nvim-lsp-installer"
+
   -- Colorschemes
   -- use "arcticicestudio/nord-vim"
   use "shaunsingh/nord.nvim" -- Nord Colorscheme
@@ -67,6 +71,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine

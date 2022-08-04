@@ -13,4 +13,5 @@ require "user.telescope"
 require "user.bufferline"
 require "user.autopairs"
 require "user.alpha"
+require "user.lsp"
 -- Fundamental stuff

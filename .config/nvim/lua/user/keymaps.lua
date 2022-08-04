@@ -39,6 +39,15 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Exit faster
+keymap("n", "<leader>qa", ":wqa <CR>", opts)
+keymap("n", "zz", ":wqa <CR>", opts)
+keymap("n", "<leader>qb", ":bdelete <CR>", opts)
+keymap("n", "<leader>qw", ":q <CR>", opts)
+
+-- Misc
+keymap("n", "<C-S>", ":let @/ = ''<CR>", opts)
+
 -- INSERT MODE --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
@@ -52,6 +61,7 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
+
 
 -- VISUAL BLOCK --
 -- Move text up and down
@@ -74,5 +84,8 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fp", ":Telescope find_files theme=dropdown cwd=~/.config/nvim previewer=false<CR>", opts)
+keymap("n", "<leader>fa", ":Telescope<CR>", opts)
+keymap("n", "<leader>fr", ":Telescope oldfiles <CR>", opts)
+
 -- CODE-RUNNER --
 keymap("n", "<A-i>", ":RunFile<CR>", opts)
