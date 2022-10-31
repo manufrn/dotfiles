@@ -27,6 +27,8 @@ keymap("n", "<leader>wl", "<C-w>l", opts)
 
 keymap("n", "<leader>ww", "<C-w>w", opts)
 keymap("n", "<leader>wv", ":vsplit<CR>", opts)
+keymap("n", "<leader>wh", ":hsplit<CR>", opts)
+keymap("n", "<leader>wc", ":close<CR>", opts)
 
 
 -- Resize with arrows

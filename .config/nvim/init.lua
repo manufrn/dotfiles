@@ -1,4 +1,4 @@
-require "user.keymaps" 
+require "user.keymaps"
 require "user.options"
 require "user.plugins"
 require "user.colorscheme"
@@ -14,4 +14,5 @@ require "user.bufferline"
 require "user.autopairs"
 require "user.alpha"
 require "user.lsp"
+require "user.spellsitter"
 -- Fundamental stuff

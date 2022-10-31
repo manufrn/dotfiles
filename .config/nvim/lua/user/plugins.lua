@@ -79,7 +79,7 @@ return packer.startup(function(use)
 
   -- telescope
   use "nvim-telescope/telescope.nvim"
-  
+  use "lewis6991/spellsitter.nvim"
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

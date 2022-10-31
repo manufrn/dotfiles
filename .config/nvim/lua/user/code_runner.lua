@@ -6,6 +6,7 @@ end
 code_runner.setup({
   filetype = {
     python = "python3 -u",
+    tex = "latexmk -pdf -pvc"
   },
   -- choose default mode (valid term, tab, float, toggle)
   mode = 'toggleterm',
