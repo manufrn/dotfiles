@@ -33,6 +33,11 @@ comment.setup {
           ---Block-comment toggle keymap 
           block = '<leader>gb',
       },
+
+  opleader = {
+          --Line-comment keymap
+          line = '<leader>g'
+      },
   extra = {
           ---Add comment on the line above 
           above = 'gcO',

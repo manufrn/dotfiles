@@ -30,7 +30,7 @@ vim.opt.numberwidth = 4                         -- set number column width to 2 
 vim.opt.wrap = false                            -- display lines as one long line
 vim.opt.scrolloff = 8                           -- is one of my fav
 vim.opt.sidescrolloff = 8
-vim.opt.guifont = "RobotoMono Nerd Font:h8"               -- the font used in graphical neovim applications
+vim.opt.guifont = "RobotoMono Nerd Font:h11"               -- the font used in graphical neovim applications
 vim.opt.spelllang = "en,es"
 
 

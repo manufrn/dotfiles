@@ -31,6 +31,7 @@ keymap("n", "<leader>wh", ":hsplit<CR>", opts)
 keymap("n", "<leader>wc", ":close<CR>", opts)
 
 
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -40,6 +41,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<leader>bc", ":bdelete<CR>", opts)
 
 -- Exit faster
 keymap("n", "<leader>qa", ":wqa <CR>", opts)
