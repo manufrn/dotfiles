@@ -93,3 +93,10 @@ keymap("n", "<leader>fr", ":Telescope oldfiles <CR>", opts)
 
 -- CODE-RUNNER --
 keymap("n", "<A-i>", ":RunFile<CR>", opts)
+keymap("n", "<A-l>", ":VimtexCompile<CR>", opts)
+keymap("n", "<A-ñ>", ":VimtexView<CR>", opts)
+
+-- spell --
+keymap("n", "<leader>ss", "z=", opts)
+keymap("n", "<leader>sa", "zg", opts)
+keymap("n", "<leader>sb", "zw", opts)

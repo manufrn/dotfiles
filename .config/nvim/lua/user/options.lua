@@ -34,6 +34,8 @@ vim.opt.guifont = "RobotoMono Nerd Font:h11"               -- the font used in g
 vim.opt.spelllang = "en,es"
 
 
+vim.api.nvim_command('filetype plugin on')
+vim.api.nvim_command('filetype plugin indent on')
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]                    -- words separated by - are treated as one word
 vim.cmd[[hi bold ctermfg=NONE ctermbg=NONE cterm=NONE]]
@@ -47,3 +49,10 @@ vim.api.nvim_create_autocmd(
     { "BufRead", "BufNewFile" },
     { pattern = { "*.txt", "*.md", "*.tex" }, command = "setlocal textwidth=80" }
 )
+
+
+vim.api.nvim_create_autocmd(
+    { "BufRead", "BufNewFile" },
+    { pattern = {"*.tex" }, command = "setlocal textwidth=80" }
+)
+

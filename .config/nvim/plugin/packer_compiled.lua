@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/code_runner.nvim",
     url = "https://github.com/CRAG666/code_runner.nvim"
   },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/manu/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -134,15 +139,15 @@ _G.packer_plugins = {
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  neovim = {
+    loaded = true,
+    path = "/home/manu/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["nord.nvim"] = {
     loaded = true,
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/nord.nvim",
     url = "https://github.com/shaunsingh/nord.nvim"
-  },
-  ["nordic.nvim"] = {
-    loaded = true,
-    path = "/home/manu/.local/share/nvim/site/pack/packer/start/nordic.nvim",
-    url = "https://github.com/andersevenrud/nordic.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -194,11 +199,6 @@ _G.packer_plugins = {
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["spellsitter.nvim"] = {
-    loaded = true,
-    path = "/home/manu/.local/share/nvim/site/pack/packer/start/spellsitter.nvim",
-    url = "https://github.com/lewis6991/spellsitter.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -208,10 +208,20 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  vimtex = {
+    config = { "\27LJ\2\nÎ\1\0\0\2\0\t\0\0176\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0006\0\0\0009\0\1\0)\1\1\0=\1\6\0006\0\0\0009\0\1\0'\1\b\0=\1\a\0K\0\1\0\flatexmk\27vimtex_compiler_method\24tex_comment_nospell\1\0\1\6_\14-pdflatex$vimtex_compiler_latexmk_engines\fzathura\23vimtex_view_method\6g\bvim\0" },
+    loaded = true,
+    path = "/home/manu/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: vimtex
+time([[Config for vimtex]], true)
+try_loadstring("\27LJ\2\nÎ\1\0\0\2\0\t\0\0176\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0006\0\0\0009\0\1\0)\1\1\0=\1\6\0006\0\0\0009\0\1\0'\1\b\0=\1\a\0K\0\1\0\flatexmk\27vimtex_compiler_method\24tex_comment_nospell\1\0\1\6_\14-pdflatex$vimtex_compiler_latexmk_engines\fzathura\23vimtex_view_method\6g\bvim\0", "config", "vimtex")
+time([[Config for vimtex]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

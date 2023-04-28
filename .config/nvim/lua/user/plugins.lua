@@ -60,10 +60,33 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
 
+  -- latex
+  use { 
+      'lervag/vimtex',
+      -- opt = true,
+      config = function ()
+          -- vim.g.vimtex_view_general_viewer = 'zathura'
+          vim.g.vimtex_view_method = 'zathura'
+          vim.g.vimtex_compiler_latexmk_engines = {
+              _ = '-pdflatex'
+          }
+          vim.g.tex_comment_nospell = 1
+          vim.g.vimtex_compiler_method = 'latexmk'
+
+          -- vim.g.vimtex_compiler_progname = 'nvr'
+          -- vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
+          -- vim.g.vimtex_view_general_options_latexmk = '--unique'
+      end
+  }
+
+  -- use 'lervag/vimtex'
+
   -- Colorschemes
   -- use "arcticicestudio/nord-vim"
   use "shaunsingh/nord.nvim" -- Nord Colorscheme
-  use 'andersevenrud/nordic.nvim'
+  use "Mofiqul/dracula.nvim"
+  use  'rose-pine/neovim'
+  -- use 'andersevenrud/nordic.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -79,7 +102,7 @@ return packer.startup(function(use)
 
   -- telescope
   use "nvim-telescope/telescope.nvim"
-  use "lewis6991/spellsitter.nvim"
+  -- use "lewis6991/spellsitter.nvim"
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

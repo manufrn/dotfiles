@@ -1,3 +1,6 @@
+set synctex true
+set synctex-editor-command "nvr --remote-silent +%{line} %{input}"
+alias vim="vim --servername VIM"
 set smooth-scroll "true"
 set window-title-basename "true"
 set selection-clipboard "clipboard"
