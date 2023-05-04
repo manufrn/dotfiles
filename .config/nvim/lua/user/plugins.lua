@@ -56,6 +56,8 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim"
   use "akinsho/bufferline.nvim"
 
+  use "lukas-reineke/indent-blankline.nvim"
+
   -- LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
@@ -67,6 +69,7 @@ return packer.startup(function(use)
       config = function ()
           -- vim.g.vimtex_view_general_viewer = 'zathura'
           vim.g.vimtex_view_method = 'zathura'
+          vim.g.vimtex_syntax_enabled = 0
           vim.g.vimtex_compiler_latexmk_engines = {
               _ = '-pdflatex'
           }

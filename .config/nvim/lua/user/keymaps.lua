@@ -32,6 +32,8 @@ keymap("n", "<leader>wc", ":close<CR>", opts)
 
 
 
+
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -51,6 +53,7 @@ keymap("n", "<leader>qw", ":q <CR>", opts)
 
 -- Misc
 keymap("n", "<C-S>", ":let @/ = ''<CR>", opts)
+keymap("n", "<leader>m", ":noh<CR>", opts)
 
 -- INSERT MODE --
 -- Press jk fast to enter

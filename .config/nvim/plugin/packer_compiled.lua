@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/manu/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -210,7 +215,7 @@ _G.packer_plugins = {
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
   vimtex = {
-    config = { "\27LJ\2\nÎ\1\0\0\2\0\t\0\0176\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0006\0\0\0009\0\1\0)\1\1\0=\1\6\0006\0\0\0009\0\1\0'\1\b\0=\1\a\0K\0\1\0\flatexmk\27vimtex_compiler_method\24tex_comment_nospell\1\0\1\6_\14-pdflatex$vimtex_compiler_latexmk_engines\fzathura\23vimtex_view_method\6g\bvim\0" },
+    config = { "\27LJ\2\nô\1\0\0\2\0\n\0\0216\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\1\0005\1\6\0=\1\5\0006\0\0\0009\0\1\0)\1\1\0=\1\a\0006\0\0\0009\0\1\0'\1\t\0=\1\b\0K\0\1\0\flatexmk\27vimtex_compiler_method\24tex_comment_nospell\1\0\1\6_\14-pdflatex$vimtex_compiler_latexmk_engines\26vimtex_syntax_enabled\fzathura\23vimtex_view_method\6g\bvim\0" },
     loaded = true,
     path = "/home/manu/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
@@ -220,7 +225,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: vimtex
 time([[Config for vimtex]], true)
-try_loadstring("\27LJ\2\nÎ\1\0\0\2\0\t\0\0176\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0006\0\0\0009\0\1\0)\1\1\0=\1\6\0006\0\0\0009\0\1\0'\1\b\0=\1\a\0K\0\1\0\flatexmk\27vimtex_compiler_method\24tex_comment_nospell\1\0\1\6_\14-pdflatex$vimtex_compiler_latexmk_engines\fzathura\23vimtex_view_method\6g\bvim\0", "config", "vimtex")
+try_loadstring("\27LJ\2\nô\1\0\0\2\0\n\0\0216\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\1\0)\1\0\0=\1\4\0006\0\0\0009\0\1\0005\1\6\0=\1\5\0006\0\0\0009\0\1\0)\1\1\0=\1\a\0006\0\0\0009\0\1\0'\1\t\0=\1\b\0K\0\1\0\flatexmk\27vimtex_compiler_method\24tex_comment_nospell\1\0\1\6_\14-pdflatex$vimtex_compiler_latexmk_engines\26vimtex_syntax_enabled\fzathura\23vimtex_view_method\6g\bvim\0", "config", "vimtex")
 time([[Config for vimtex]], false)
 
 _G._packer.inside_compile = false

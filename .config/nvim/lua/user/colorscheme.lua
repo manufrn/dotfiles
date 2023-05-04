@@ -1,4 +1,3 @@
-local colorscheme = "nordc" -- set colorscheme here
 
 
 -- local status_ok, scheme = pcall(vim.cmd, "colorscheme " .. colorscheme)
@@ -9,7 +8,7 @@ local colorscheme = "nordc" -- set colorscheme here
 
 
 -- nord colorscheme options
-vim.g.nord_italic = false
+vim.g.nord_italic = true
 vim.g.nord_contrast = false
 require('nord').set()
 

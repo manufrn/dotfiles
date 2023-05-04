@@ -4,7 +4,6 @@ if not status_ok then
 end
 
 
-
 bufferline.setup {
   options = {
     numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
@@ -75,7 +74,7 @@ bufferline.setup {
   },
   highlights = {
     fill = {
-      fg = { attribute = "fg", highlight = "#ff0000" },
+      fg = { attribute = "fg", highlight = "ff0000" },
       bg = { attribute = "bg", highlight = "TabLine" },
     },
     background = {

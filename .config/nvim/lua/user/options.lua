@@ -53,6 +53,6 @@ vim.api.nvim_create_autocmd(
 
 vim.api.nvim_create_autocmd(
     { "BufRead", "BufNewFile" },
-    { pattern = {"*.tex" }, command = "setlocal textwidth=80" }
+    { pattern = {"*.tex" }, command = "setlocal textwidth=71" }
 )
 

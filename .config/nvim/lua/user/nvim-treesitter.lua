@@ -13,5 +13,6 @@ configs.setup({
 	autopairs = {
 		enable = true,
 	},
+    additional_vim_regex_highlighting = { "latex" },
 	-- indent = { enable = true, disable = { "python", "css" } },
 })

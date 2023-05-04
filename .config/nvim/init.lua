@@ -15,4 +15,3 @@ require "user.autopairs"
 require "user.alpha"
 require "user.lsp"
 require "user.spellsitter"
--- Fundamental stuff
