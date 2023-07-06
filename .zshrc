@@ -12,7 +12,7 @@ ZSH_THEME="eastwood"
 NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 
 #export PATH='/home/manu/.local/bin:$PATH'
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/bin"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
