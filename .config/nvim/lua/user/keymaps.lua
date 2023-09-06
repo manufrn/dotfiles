@@ -31,9 +31,6 @@ keymap("n", "<leader>wh", ":hsplit<CR>", opts)
 keymap("n", "<leader>wc", ":close<CR>", opts)
 
 
-
-
-
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -43,18 +40,17 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
-keymap("n", "<leader>bc", ":bdelete<CR>", opts)
+keymap("n", "<leader>bc", ":BufferClose<CR>", opts)
 
 -- Exit faster
 keymap("n", "<leader>qa", ":wqa <CR>", opts)
 keymap("n", "zz", ":wqa <CR>", opts)
-keymap("n", "<leader>qb", ":bdelete <CR>", opts)
+keymap("n", "<leader>qb", ":BufferClose<CR>", opts)
 keymap("n", "<leader>qw", ":q <CR>", opts)
 
 -- Misc
-keymap("n", "<C-S>", ":let @/ = ''<CR>", opts)
-keymap("n", "<leader>m", ":noh<CR>", opts)
-
+keymap("n", "<leader>oc", ":noh<CR>", opts)
+--
 -- INSERT MODE --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)

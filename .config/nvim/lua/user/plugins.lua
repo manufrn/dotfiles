@@ -54,7 +54,8 @@ return packer.startup(function(use)
   use 'CRAG666/code_runner.nvim'  
   use 'akinsho/toggleterm.nvim'
   use "numToStr/Comment.nvim"
-  use "akinsho/bufferline.nvim"
+  -- use "akinsho/bufferline.nvim"
+  use 'romgrk/barbar.nvim'
 
   use "lukas-reineke/indent-blankline.nvim"
 
@@ -82,7 +83,6 @@ return packer.startup(function(use)
       end
   }
 
-  -- use 'lervag/vimtex'
 
   -- Colorschemes
   -- use "arcticicestudio/nord-vim"
