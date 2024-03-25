@@ -1,3 +1,3 @@
 #!/bin/sh
 timestamp="$(date +'%b-%d-%y')"
-sudo tar cvpzf /home/manu/Nextcloud/obsidian_backup/${timestamp}.tar.gz -C /home/manu/obsidian/Notes/ .
+sudo tar cvpzf /home/manu/Nextcloud_disroot/obsidian_backup/${timestamp}.tar.gz -C /home/manu/obsidian/Notes/ .

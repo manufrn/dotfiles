@@ -33,26 +33,35 @@ vim.opt.sidescrolloff = 8
 vim.opt.guifont = "RobotoMono Nerd Font:h11"               -- the font used in graphical neovim applications
 vim.opt.spelllang = "en,es"
 
+-- pure sanity
+vim.api.nvim_create_user_command('Q', 'q', { nargs = 0 })
+vim.api.nvim_create_user_command('WQ', 'wq', { nargs = 0 })
+vim.api.nvim_create_user_command('WQA', 'wqa', { nargs = 0 })
+-- vim.api.nvim_create_user_command('Q!', 'q!', { nargs = 0 })
+-- vim.api.nvim_create_user_command('QA!', 'qa!', { nargs = 0 })
+
+vim.filetype.add({ extension = {typ = "typst"}})
 
 vim.api.nvim_command('filetype plugin on')
 vim.api.nvim_command('filetype plugin indent on')
 vim.cmd "set whichwrap+=<,>,[,],h,l"
+vim.cmd "set confirm"
 vim.cmd [[set iskeyword+=-]]                    -- words separated by - are treated as one word
 vim.cmd[[hi bold ctermfg=NONE ctermbg=NONE cterm=NONE]]
 
 vim.api.nvim_create_autocmd(
     { "BufRead", "BufNewFile" },
-    { pattern = { "*.txt", "*.md", "*.tex" }, command = "setlocal spell" }
+    { pattern = { "*.txt", "*.md", "*.tex" , "*.typ"}, command = "setlocal spell" }
 )
 
 vim.api.nvim_create_autocmd(
     { "BufRead", "BufNewFile" },
-    { pattern = { "*.txt", "*.md", "*.tex" }, command = "setlocal textwidth=80" }
+    { pattern = { "*.txt", "*.md", "*.tex", "*.typ"}, command = "setlocal textwidth=80" }
 )
 
 
 vim.api.nvim_create_autocmd(
     { "BufRead", "BufNewFile" },
-    { pattern = {"*.tex" }, command = "setlocal textwidth=71" }
+    { pattern = {"*.tex", "*.typ" }, command = "setlocal textwidth=71" }
 )
 

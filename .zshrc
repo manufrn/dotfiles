@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export SCREENSHOT_TOOL="pil"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,7 +105,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='/usr/bin/git --git-dir=/home/manu/.dotfiles.git/ --work-tree=/home/manu'
 alias reboot='systemctl reboot'
-alias sshserver='ssh -p 55555 fisica@193.146.140.66'
+alias sshseedbox='kitten ssh xineru@frog.seedhost.eu'
+alias sshk='kitten ssh'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

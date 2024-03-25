@@ -6,7 +6,8 @@ end
 code_runner.setup({
   filetype = {
     python = "python3 -u",
-    tex = "latexmk -pdf -pvc"
+    tex = "latexmk -pdf -pvc",
+    typst = "typst watch --open zathura"
   },
   -- choose default mode (valid term, tab, float, toggle)
   mode = 'toggleterm',

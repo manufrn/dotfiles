@@ -28,7 +28,10 @@ keymap("n", "<leader>wl", "<C-w>l", opts)
 keymap("n", "<leader>ww", "<C-w>w", opts)
 keymap("n", "<leader>wv", ":vsplit<CR>", opts)
 keymap("n", "<leader>wh", ":hsplit<CR>", opts)
+
 keymap("n", "<leader>wc", ":close<CR>", opts)
+keymap("n", "<leader>wq", ":close<CR>", opts)
+keymap("n", "<leader>wd", ":close<CR>", opts)
 
 
 -- Resize with arrows
@@ -40,13 +43,25 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
-keymap("n", "<leader>bc", ":BufferClose<CR>", opts)
+keymap("n", "<leader>bb", ":bnext<CR>", opts)
+keymap("n", "<leader>bB", ":bprevious<CR>", opts)
+
+keymap("n", "<leader>bd", ":BufferClose<CR>", opts)
+keymap("n", "<leader>bD", ":BufferClose!<CR>", opts)
+
 
 -- Exit faster
-keymap("n", "<leader>qa", ":wqa <CR>", opts)
+keymap("n", "<leader>qw", ":close<CR>", opts)
+keymap("n", "<leader>qq", ":wqa <CR>", opts)
+keymap("n", "<leader>qa", ":qa <CR>", opts)
+keymap("n", "<leader>qQ", ":qa! <CR>", opts)
+
 keymap("n", "zz", ":wqa <CR>", opts)
 keymap("n", "<leader>qb", ":BufferClose<CR>", opts)
-keymap("n", "<leader>qw", ":q <CR>", opts)
+keymap("n", "<leader>qB", ":BufferClose!<CR>", opts)
+keymap("n", "<leader>qw", ":close <CR>", opts)
+keymap("n", "<leader>aa", ":Alpha<CR>", opts)
+
 
 -- Misc
 keymap("n", "<leader>oc", ":noh<CR>", opts)
@@ -95,7 +110,7 @@ keymap("n", "<A-i>", ":RunFile<CR>", opts)
 keymap("n", "<A-ñ>", ":VimtexView<CR>", opts)
 
 -- VIMTEX --
---
+
 keymap("n", "<A-l>", ":VimtexCompile<CR>", opts)
 keymap("n", "<A-v>", ":VimtexView<CR>", opts)
 -- spell --

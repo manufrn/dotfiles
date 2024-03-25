@@ -54,14 +54,17 @@ return packer.startup(function(use)
   use 'CRAG666/code_runner.nvim'  
   use 'akinsho/toggleterm.nvim'
   use "numToStr/Comment.nvim"
-  -- use "akinsho/bufferline.nvim"
   use 'romgrk/barbar.nvim'
 
   use "lukas-reineke/indent-blankline.nvim"
 
   -- LSP
   use "neovim/nvim-lspconfig"
-  use "williamboman/nvim-lsp-installer"
+  -- use "williamboman/nvim-lsp-installer"
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+
+  use {'kaarmu/typst.vim', ft = {'typst'}}
 
   -- latex
   use { 
