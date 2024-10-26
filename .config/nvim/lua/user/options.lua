@@ -41,6 +41,7 @@ vim.api.nvim_create_user_command('WQA', 'wqa', { nargs = 0 })
 -- vim.api.nvim_create_user_command('QA!', 'qa!', { nargs = 0 })
 
 vim.filetype.add({ extension = {typ = "typst"}})
+vim.filetype.add({ extension = {config = "fortran"}})
 
 vim.api.nvim_command('filetype plugin on')
 vim.api.nvim_command('filetype plugin indent on')

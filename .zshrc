@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+#module load mpi/openmpi-x86_64
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -103,12 +104,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dotfiles='/usr/bin/git --git-dir=/home/manu/.dotfiles.git/ --work-tree=/home/manu'
+alias dotfiles='/usr/bin/git --git-dir=/home/manu/.dotfiles --work-tree=/home/manu'
 alias reboot='systemctl reboot'
 alias sshseedbox='kitten ssh xineru@frog.seedhost.eu'
+alias sshnesh='kitten ssh -Xt smomw649@nesh-login.rz.uni-kiel.de'
+alias sftpnesh='sftp smomw649@nesh-login.rz.uni-kiel.de'
 alias sshk='kitten ssh'
+alias l='ls -lhp'
+alias cdclimphys='cd $HOME/Nextcloud_Uni/ClimPhys/'
+alias cdhiwi='cd $HOME/Nextcloud_Uni/ClimPhys/HiWi/'
+alias loadmpi='module load mpi/openmpi-x86_64'
 
+function rsynctonesh (){
+    rsync -a $1 smomw649@nesh-login.rz.uni-kiel.de:~/
+}
+function rsyncfromnesh (){
+    rsync -a smomw649@nesh-login.rz.uni-kiel.de:/gxfs_work/geomar/smomw649/$1 .
+}
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 # <<< conda initialize <<<
-
