@@ -118,8 +118,13 @@ alias loadmpi='module load mpi/openmpi-x86_64'
 function rsynctonesh (){
     rsync -a $1 smomw649@nesh-login.rz.uni-kiel.de:~/
 }
-function rsyncfromnesh (){
+
+function rsyncfromneshwork (){
     rsync -a smomw649@nesh-login.rz.uni-kiel.de:/gxfs_work/geomar/smomw649/$1 .
+}
+
+function rsyncfromneshhome (){
+    rsync -a smomw649@nesh-login.rz.uni-kiel.de:/gxfs_home/geomar/smomw649/$1 .
 }
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
