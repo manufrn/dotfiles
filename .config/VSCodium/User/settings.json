@@ -1,0 +1,45 @@
+{
+    "workbench.colorTheme": "Nord",
+    //"window.titleBarStyle": "custom",
+    "editor.occurrencesHighlight": "off",
+    "workbench.list.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+    "extensions.experimental.affinity": {
+        "ms-toolsai.jupyter": 1,
+        "ms-toolsai.jupyter-renderers": 1,
+        "ms-python.python": 1,
+        "asvetliakov.vscode-neovim": 1
+    },
+    //"editor.glyphMargin": false,
+    //"editor.folding": false,
+
+    "file.showHiddenFile": false,
+    
+    "editor.fontFamily": "'Roboto Mono', 'Fira Code', 'monospace', monospace",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "breadcrumbs.enabled": false,
+    "terminal.integrated.smoothScrolling": false,
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+
+    "window.titleBarStyle": "native",
+    "apc.electron": {
+      "frame": false
+    },
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.location": "bottom",
+
+    "zenMode.centerLayout": false, 
+    "zenMode.hideLineNumbers": false,
+    "window.customTitleBarVisibility": "never",
+    "files.exclude": {
+      "**/.**": true
+    },
+    "explorer.excludeGitIgnore": true,
+    "editor.lightbulb.enabled": "off",
+    "workbench.sideBar.location": "left",
+    "editor.stickyScroll.defaultModel": "indentationModel",
+    "editor.fontSize": 14.5,
+    "explorer.confirmDragAndDrop": false,
+    //"window.customTitleBarVisibility": "auto"
+}
